@@ -1,0 +1,79 @@
+<html>
+
+    <style>
+         h2 {
+       text-align: center;
+        color: olive;
+        font-size: 50px;
+         }
+
+        #toggle-button {
+            text-align: center;
+        }
+
+        button {
+            color: olive;
+            border-radius: 3px;
+        }
+
+    </style>
+
+
+
+
+    <head>
+        <title>The Color Toggler</title>
+        
+    </head>
+
+    <body id="main">
+        <h2>The Color Toggler</h2>
+        <div id="toggle-button">
+        <button id="changeColorButton" onclick="changeColor()" >Change Color </button>
+        </div>  
+    </body>
+</html>
+
+<script>
+    function getRandom () {
+let max = Math.floor(10);
+    min = Math.floor(1);
+    randomNumber = Math.floor(Math.random() * (max - min) + 1); 
+    return randomNumber;
+}
+
+function changeColor () {
+    let backgroundColors = ["...", "blue", "yellow", "orange", "white", "purple", "cyan", "brown", "grey", "red" ];
+    getRandom()
+    document.getElementById("main").style.backgroundColor = backgroundColors[randomNumber];
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="color-changer.js"></script>
