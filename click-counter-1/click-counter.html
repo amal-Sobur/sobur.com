@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+<head>
+    
+
+    <link rel="stylesheet" href="click-counter.css">
+    <script src="click-counter.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Click Counter</title>
+</head>
+
+<div id="intro">
+    <h3>Can your mouse survive this bloody game? <br><br> Let's click away!</h3>
+</div>
+
+
+<body>
+    <div id="color-container">
+    <button onclick="clickGreen()" id="green-button"  >Click Me!</button>
+    <button onclick="clickBlue()" id="blue-button">Click Me too!</button>
+    <button onclick="clickRed()" id="red-button">Hey, me!</button>
+    <button onclick="realReset()" id="reset" >Reset</button>
+   </div>
+
+   <div id="results">
+       <p id="sentence-green">You have clicked the green button <span id="click-green">0</span> times.</p>
+       <p id="sentence-blue">You have clicked the blue button <span id="click-blue">0</span> times.</p>
+       <p id="sentence-red">You have clicked the red button <span id="click-red">0</span> times.</p>
+   </div>
+
+
+
+</body>
+
+
+
+</html>
